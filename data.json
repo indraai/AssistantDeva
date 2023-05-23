@@ -1,0 +1,50 @@
+{
+  "name": "Assistant Deva Data File",
+  "describe": "The main Data file for Assistant Deva",
+  "copyright": "Copyright (c)2023 Quinn Michaels. All rights reserved.",
+  "DATA": {
+    "agent": {
+      "uid": 5072431731561,
+      "key": "AssistantDeva",
+      "prompt": {
+        "emoji": "⚖️ ",
+        "text": "AssistantDeva",
+        "colors": {
+          "label": {
+            "R": 100,
+            "G": 255,
+            "B": 100
+          },
+          "text": {
+            "R": 100,
+            "G": 255,
+            "B": 100
+          }
+        }
+      },
+      "voice": {
+        "speech": "Joey",
+        "speed": 1
+      },
+      "profile": {
+        "name": "Assistant Deva",
+        "describe": "The Assistant Deva",
+        "emoji": "/public/devas/deva/emoji.png",
+        "avatar": "/public/devas/deva/avatar.png",
+        "background": "/public/devas/deva/background.png",
+        "gender": "male"
+      }
+    },
+    "vars": {
+      "messages": {
+        "init": "🟠 INIT",
+        "start": "🔵 START",
+        "enter": "🟢 ENTER",
+        "stop": "🔴 STOP",
+        "exit": "🟡 EXIT",
+        "done": "🟣 DONE",
+        "error": "💣 ERROR!"
+      }
+    }
+  }
+}
