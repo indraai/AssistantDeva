@@ -5,17 +5,17 @@ p:Copyright (c)2023 Quinn Michaels
 p:This is the main help file for Assistant Deva. Providing support to deva.world.
 
 id: 5072431731561
-key: AssistantDeva
+key: assistant
 name: Assistant Deva
 describe: Providing support to deva.world.
 
 ### Methods
 
-cmd:#AssistantDeva uid
+cmd:#assistant uid
 p:Generate a unique id from the Assistant Deva.
 
-cmd:#AssistantDeva status
+cmd:#assistant status
 p:Return the status for the Assistant Deva.
 
-cmd:#AssistantDeva help
+cmd:#assistant help
 p:Get help using the Assistant Deva

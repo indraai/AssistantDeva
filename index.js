@@ -1,5 +1,5 @@
 // Copyright (c)2023 Quinn Michaels
-// Assistant Deva is responsible for the Vedic Tradition Laws.
+//Story Deva is responsible is all about #StoryLand.
 
 const fs = require('fs');
 const path = require('path');
