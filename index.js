@@ -42,7 +42,18 @@ const ASSISTANT = new Deva({
   listeners: {},
   modules: {},
   deva: {},
-  func: {},
+  func: {
+    ass_question(packet) {
+      const agent = this.agent();
+      const assistant = this.assistant();
+      assistant.personal.answers.push(packet);
+    },
+    ass_answer(packet) {
+      const agent = this.agent();
+      const assistant = this.assistant();
+      assistant.personal.answers.push(packet);
+    },
+  },
   methods: {
     /**************
     method: uid
@@ -80,6 +91,15 @@ const ASSISTANT = new Deva({
         }).catch(reject);
       });
     }
+  },
+  onDone(data) {
+    this.listen('devacore:question', packet => {
+      if (packet.q.text.includes(this.vars.trigger)) return this.func.ass_question(packet);
+    });
+    this.listen('devacore:answer', packet => {
+      if (packet.a.text.includes(this.vars.trigger)) return this.func.ass_answer(packet);
+    });
+    return Promise.resolve(data);
   },
 });
 module.exports = ASSISTANT
